@@ -1,0 +1,51 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Países</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://paradize__store.com/images/paradize.png" alt="Paradize Logo" class="logo">
+            <h1>¡Bienvenido!</h1>
+            <p>Selecciona tu país</p>
+        </header>
+        <section class="country-selection">
+            <h2>¿De qué país eres?</h2>
+            <div class="countries">
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="México">
+                    <a href="#" onclick="selectCountry('México')">México</a>
+                </div>
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina">
+                    <a href="#" onclick="selectCountry('Argentina')">Argentina</a>
+                </div>
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg" alt="Bolivia">
+                    <a href="#" onclick="selectCountry('Bolivia')">Bolivia</a>
+                </div>
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg" alt="Perú">
+                    <a href="#" onclick="selectCountry('Perú')">Perú</a>
+                </div>
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" alt="Chile">
+                    <a href="#" onclick="selectCountry('Chile')">Chile</a>
+                </div>
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg" alt="Republica Dominicana">
+                    <a href="#" onclick="selectCountry('Republica Dominicana')">Republica Dominicana</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function selectCountry(country) {
+            alert("Has seleccionado: " + country);
+        }
+    </script>
+</body>
+</html>
