@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function selectCountry(country) {
     localStorage.setItem("selectedCountry", country);
-    alert("Has seleccionado: " + country);
-
+    
     if (country === 'Bolivia') {
         window.location.href = 'https://pency.app/paradizestore';
     }
