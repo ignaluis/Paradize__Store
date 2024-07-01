@@ -1,51 +1,82 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selección de Países</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://paradize__store.com/images/paradize.png" alt="Paradize Logo" class="logo">
-            <h1>¡Bienvenido!</h1>
-            <p>Selecciona tu país</p>
-        </header>
+    <div class="header">
+        <img src="https://i.postimg.cc/K8nZmmCH/Paradize-8.png" alt="Logo" class="logo">
+        <h1>¡WELCOME!</h1>
+    </div>
+
+    <div class="container countries-container">
         <section class="country-selection">
-            <h2>¿De qué país eres?</h2>
-            <div class="countries">
+            <h2>SELECCIONA TU PAIS:</h2>
+            <div class="countries-row">
                 <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="México">
-                    <a href="#" onclick="selectCountry('México')">México</a>
+                    <a href="#" onclick="selectCountry('Mexico')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="México">
+                        <span>MÉXICO</span>
+                    </a>
                 </div>
                 <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina">
-                    <a href="#" onclick="selectCountry('Argentina')">Argentina</a>
+                    <a href="#" onclick="selectCountry('Bolivia')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg" alt="Bolivia">
+                        <span>BOLIVIA</span>
+                    </a>
                 </div>
                 <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg" alt="Bolivia">
-                    <a href="#" onclick="selectCountry('Bolivia')">Bolivia</a>
+                    <a href="#" onclick="selectCountry('Chile')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" alt="Chile">
+                        <span>CHILE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="countries-row">
+                <div class="country">
+                    <a href="#" onclick="selectCountry('Peru')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Peru_%28state%29.svg" alt="Peru">
+                        <span>PERU</span>
+                    </a>
                 </div>
                 <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg" alt="Perú">
-                    <a href="#" onclick="selectCountry('Perú')">Perú</a>
+                    <a href="#" onclick="selectCountry('Argentina')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Argentina">
+                        <span>ARGENTINA</span>
+                    </a>
                 </div>
                 <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" alt="Chile">
-                    <a href="#" onclick="selectCountry('Chile')">Chile</a>
-                </div>
-                <div class="country">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg" alt="Republica Dominicana">
-                    <a href="#" onclick="selectCountry('Republica Dominicana')">Republica Dominicana</a>
+                    <a href="#" onclick="selectCountry('Republica Dominicana')">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg" alt="República Dominicana">
+                        <span>DOMINICANA</span>
+                    </a>
                 </div>
             </div>
         </section>
     </div>
-    <script>
-        function selectCountry(country) {
-            alert("Has seleccionado: " + country);
-        }
-    </script>
+
+    <div class="container feedback">
+        <h2 class="feedback-title">FEEDBACK</h2>
+        <section class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://i.postimg.cc/mkkgCWwx/prueba4.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="https://i.postimg.cc/KYhjVVZL/prueba-1.jpg" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="https://i.postimg.cc/43vyT5d0/prueba2.jpg" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="https://i.postimg.cc/1t9tRqV3/prueba3.png" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="https://i.postimg.cc/1X2q1ybz/test12.jpghttps://i.postimg.cc/mkkgCWwx/prueba4.jpg" alt="Imagen 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
